@@ -1,0 +1,57 @@
+﻿#datalist-toolbar #button-list #button-filter {
+    padding-left: 32px;
+    background-image: url(/ui/images/datalist-button-filter-icon.png);
+}
+#custom-time {
+    margin: 0;
+    padding: 0;
+}
+#custom-time input {
+    float: left;
+    width: 160px;
+    height: 18px;
+    margin: 0;
+    padding: 2px 8px 2px 8px;
+    border: 1px solid #E0E0E0;
+    font-size: 1em;
+    line-height: 18px;
+    background: #EEEEEE;
+}
+#custom-time input:focus {
+    border: 1px solid #BDBDBD;
+}
+#custom-time .text {
+    float: left;
+    height: 20px;
+    margin: 0;
+    padding: 2px 8px 2px 8px;
+    font-size: 1em;
+    line-height: 20px;
+}
+#custom-time .button {
+    float: left;
+    height: 20px;
+    margin: 0 0 0 8px;
+    padding: 2px 12px 2px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #1976D2;
+    cursor: pointer;
+}
+#custom-time .button:hover {
+    background: #2196F3;
+}
+.version {
+    display: inline-block;
+    height: 16px;
+    margin: 0;
+    padding: 2px 4px 2px 4px;
+    border-radius: 4px;
+    font-size: .95em;
+    line-height: 16px;
+    color: #757575;
+    background: #E0E0E0;
+}

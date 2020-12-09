@@ -1,0 +1,71 @@
+﻿#upload-ui {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#upload-ui #file-list {
+    width: 480px;
+    height: 100px;
+}
+#upload-ui #file-list .file-item {
+    position: relative;
+    margin: 0;
+    padding: 8px;
+}
+#upload-ui .file-item .name {
+    margin: 0;
+    padding: 4px;
+    font-size: 1em;
+}
+#upload-ui .file-item .task {
+    margin: 0;
+    padding: 0;
+}
+#upload-ui .file-item .task .state {
+    display: inline-block;
+    height: 16px;
+    margin: 0;
+    padding: 4px;
+    font-size: .95em;
+    line-height: 16px;
+    vertical-align: middle;
+    color: #757575;
+}
+#upload-ui .file-item .task .size {
+    display: inline-block;
+    height: 16px;
+    margin: 0;
+    padding: 4px;
+    font-size: .95em;
+    line-height: 16px;
+    vertical-align: middle;
+    color: #757575;
+}
+#upload-ui .file-item .progress {
+    position: relative;
+    height: 4px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+}
+#upload-ui .file-item .progress .bar {
+    position: absolute;
+    width: 0;
+    height: 4px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    background: rgba(96, 125, 139, .5);
+}
+#upload-ui #upload-tips {
+    margin: 0;
+    padding: 8px;
+    font-size: .95em;
+    line-height: 24px;
+    color: #757575;
+}
+#upload-ui #remark {
+    width: 480px;
+}

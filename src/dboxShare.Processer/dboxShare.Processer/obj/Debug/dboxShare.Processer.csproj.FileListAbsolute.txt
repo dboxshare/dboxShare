@@ -1,0 +1,11 @@
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\bin\Debug\converter.xml
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\bin\Debug\dboxShare.Processer.exe.config
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\bin\Debug\dboxShare.Processer.exe
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\bin\Debug\dboxShare.Processer.pdb
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\bin\Debug\dboxShare.Base.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\bin\Debug\MySql.Data.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\bin\Debug\dboxShare.Base.pdb
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\obj\Debug\dboxShare.Processer.csproj.CoreCompileInputs.cache
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\obj\Debug\dboxShare.Processer.csproj.CopyComplete
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\obj\Debug\dboxShare.Processer.exe
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Processer\dboxShare.Processer\obj\Debug\dboxShare.Processer.pdb

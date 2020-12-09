@@ -1,0 +1,58 @@
+﻿#datalist-toolbar #button-list #button-restore {
+    padding-left: 32px;
+    background-image: url(/ui/images/datalist-button-restore-icon.png);
+}
+#datalist-toolbar #button-list #button-delete {
+    padding-left: 32px;
+    background-image: url(/ui/images/datalist-button-delete-icon.png);
+}
+.list-icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    line-height: 0;
+}
+.list-icon .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.list-icon .share {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 0 1px #FFFFFF;
+}
+.list-icon .lock {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 0 1px #FFFFFF;
+}
+.version {
+    display: inline-block;
+    height: 16px;
+    margin: 0;
+    padding: 2px 4px 2px 4px;
+    border-radius: 4px;
+    font-size: .95em;
+    line-height: 16px;
+    color: #757575;
+    background: #E0E0E0;
+}
+.recycle-tips {
+    height: 16px;
+    margin: 0;
+    padding: 8px;
+    font-size: .95em;
+    line-height: 16px;
+    color: #757575;
+}

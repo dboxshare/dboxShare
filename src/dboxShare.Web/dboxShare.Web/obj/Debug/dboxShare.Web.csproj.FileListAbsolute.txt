@@ -1,0 +1,37 @@
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Web.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Web.pdb
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Base.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\bin\Debug\Lucene.Net.Contrib.Analyzers.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\bin\Debug\Lucene.Net.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\bin\Debug\SevenZipSharp.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\bin\Debug\MySql.Data.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Base.pdb
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.csprojAssemblyReference.cache
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.csproj.CoreCompileInputs.cache
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.csproj.CopyComplete
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.pdb
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Web.dll
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Web.pdb
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Base.dll
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\bin\Debug\Lucene.Net.Contrib.Analyzers.dll
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\bin\Debug\Lucene.Net.dll
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\bin\Debug\SevenZipSharp.dll
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\bin\Debug\MySql.Data.dll
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Base.pdb
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.csprojAssemblyReference.cache
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.csproj.CoreCompileInputs.cache
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.csproj.CopyComplete
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.dll
+D:\inetpub\wwwroot\dboxShare_v2\组件\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.pdb
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Web.dll
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Web.pdb
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Base.dll
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\bin\Debug\SevenZipSharp.dll
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\bin\Debug\MySql.Data.dll
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\bin\Debug\dboxShare.Base.pdb
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.csprojAssemblyReference.cache
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.csproj.CoreCompileInputs.cache
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.csproj.CopyComplete
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.dll
+D:\inetpub\wwwroot\dboxShare_v2\程序包\dboxShare Community\dboxShare_en\src\dboxShare.Web\dboxShare.Web\obj\Debug\dboxShare.Web.pdb

@@ -1,0 +1,89 @@
+﻿.datalist-flow {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-spacing: 0;
+    border-collapse: separate;
+    table-layout: fixed;
+    background: #FFFFFF;
+}
+.datalist-flow td {
+    padding: 16px 8px 16px 8px;
+    vertical-align: top;
+}
+.datalist-flow .avatar {
+    margin: 0;
+    padding: 32px 0 0 0;
+}
+.datalist-flow .username {
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 24px;
+}
+.datalist-flow .time {
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    font-size: .95em;
+    line-height: 32px;
+    color: #757575;
+}
+.datalist-flow .box {
+    position: relative;
+    margin: 0;
+    padding: 16px;
+    border-radius: 4px;
+    background: #EEEEEE;
+    box-shadow: 0 0 2px #BDBDBD;
+}
+.datalist-flow .box:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -8px;
+    margin: 0;
+    padding: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #EEEEEE;
+    border-bottom: 8px solid transparent;
+}
+.datalist-flow .filename {
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 24px;
+}
+.datalist-flow .content {
+    position: relative;
+    margin: 0;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 1em;
+    line-height: 24px;
+    color: #757575;
+    background: #FAFAFA;
+    box-shadow: 0 0 2px #E0E0E0;
+}
+.datalist-flow .enter {
+    position: absolute;
+    top: -16px;
+    right: 0;
+    height: 20px;
+    margin: 0;
+    padding: 2px 8px 2px 8px;
+    border-radius: 4px;
+    font-size: 1em;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #1976D2;
+}
+.datalist-flow .enter:hover {
+    background: #2196F3;
+}
+.datalist-flow .enter a {
+    color: #FFFFFF;
+}

@@ -1,0 +1,10 @@
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer.Task\dboxSyncer.Task\bin\Debug\dboxSyncer.Task.exe
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer.Task\dboxSyncer.Task\bin\Debug\dboxSyncer.Task.pdb
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer.Task\dboxSyncer.Task\bin\Debug\dboxSyncer.exe
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer.Task\dboxSyncer.Task\bin\Debug\dboxSyncer.pdb
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer.Task\dboxSyncer.Task\bin\Debug\dboxSyncer.exe.config
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer.Task\dboxSyncer.Task\obj\Debug\dboxSyncer.Task.csprojAssemblyReference.cache
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer.Task\dboxSyncer.Task\obj\Debug\dboxSyncer.Task.csproj.CoreCompileInputs.cache
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer.Task\dboxSyncer.Task\obj\Debug\dboxSyncer.Task.csproj.CopyComplete
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer.Task\dboxSyncer.Task\obj\Debug\dboxSyncer.Task.exe
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer.Task\dboxSyncer.Task\obj\Debug\dboxSyncer.Task.pdb

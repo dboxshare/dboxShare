@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDAB0452-AB04-4075-8E58-E1AF85C09F32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dboxShare.Web</RootNamespace>
+    <AssemblyName>dboxShare.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dboxShare.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dboxShare.Base\dboxShare.Base\bin\Debug\dboxShare.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp, Version=0.64.6864.19853, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>com\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class\admin\department\department-action.ashx.cs" />
+    <Compile Include="class\admin\department\department-data-json.ashx.cs" />
+    <Compile Include="class\admin\department\department-list-json.ashx.cs" />
+    <Compile Include="class\admin\log\log-list-json.ashx.cs" />
+    <Compile Include="class\admin\role\role-action.ashx.cs" />
+    <Compile Include="class\admin\role\role-data-json.ashx.cs" />
+    <Compile Include="class\admin\role\role-list-json.ashx.cs" />
+    <Compile Include="class\admin\statistic\statistic-data-json.ashx.cs" />
+    <Compile Include="class\admin\system\system-config-data-json.ashx.cs" />
+    <Compile Include="class\admin\system\system-config.ashx.cs" />
+    <Compile Include="class\admin\user\user-action.ashx.cs" />
+    <Compile Include="class\admin\user\user-data-json.ashx.cs" />
+    <Compile Include="class\admin\user\user-list-json.ashx.cs" />
+    <Compile Include="class\admin\user\user-recycle-list-json.ashx.cs" />
+    <Compile Include="class\app-common.cs" />
+    <Compile Include="class\app-global.asax.cs" />
+    <Compile Include="class\base-data-js.ashx.cs" />
+    <Compile Include="class\drive\activity\activity-flow-list-json.ashx.cs" />
+    <Compile Include="class\drive\activity\activity-log-list-json.ashx.cs" />
+    <Compile Include="class\drive\discuss\discuss-action.ashx.cs" />
+    <Compile Include="class\drive\discuss\discuss-flow-list-json.ashx.cs" />
+    <Compile Include="class\drive\discuss\discuss-list-json.ashx.cs" />
+    <Compile Include="class\drive\file\file-action.ashx.cs" />
+    <Compile Include="class\drive\file\file-data-json.ashx.cs" />
+    <Compile Include="class\drive\file\file-download-package.ashx.cs" />
+    <Compile Include="class\drive\file\file-download.ashx.cs" />
+    <Compile Include="class\drive\file\file-list-json.ashx.cs" />
+    <Compile Include="class\drive\file\file-recycle-list-json.ashx.cs" />
+    <Compile Include="class\drive\file\file-upload.ashx.cs" />
+    <Compile Include="class\drive\file\file-upversion.ashx.cs" />
+    <Compile Include="class\drive\file\file-version-list-json.ashx.cs" />
+    <Compile Include="class\drive\file\file-view.ashx.cs" />
+    <Compile Include="class\drive\file\folder-action.ashx.cs" />
+    <Compile Include="class\drive\file\folder-data-json.ashx.cs" />
+    <Compile Include="class\drive\file\folder-list-json.ashx.cs" />
+    <Compile Include="class\drive\file\folder-path-json.ashx.cs" />
+    <Compile Include="class\drive\file\folder-total-json.ashx.cs" />
+    <Compile Include="class\drive\file\list-attribute-json.ashx.cs" />
+    <Compile Include="class\drive\file\zip-data-json.cs" />
+    <Compile Include="class\drive\file\zip-file-download.cs" />
+    <Compile Include="class\drive\file\zip-file-unpack.ashx.cs" />
+    <Compile Include="class\drive\purview\purview-action.ashx.cs" />
+    <Compile Include="class\drive\purview\purview-data-json.ashx.cs" />
+    <Compile Include="class\drive\purview\purview-list-json.ashx.cs" />
+    <Compile Include="class\drive\purview\purview-role.ashx.cs" />
+    <Compile Include="class\drive\task\task-action.ashx.cs" />
+    <Compile Include="class\drive\task\task-inbox-data-json.ashx.cs" />
+    <Compile Include="class\drive\task\task-inbox-list-json.ashx.cs" />
+    <Compile Include="class\drive\task\task-member-list-json.ashx.cs" />
+    <Compile Include="class\drive\task\task-outbox-data-json.ashx.cs" />
+    <Compile Include="class\drive\task\task-outbox-list-json.ashx.cs" />
+    <Compile Include="class\user\card-data-json.ashx.cs" />
+    <Compile Include="class\user\forgot-password.ashx.cs" />
+    <Compile Include="class\user\login-auth-js.ashx.cs" />
+    <Compile Include="class\user\login.ashx.cs" />
+    <Compile Include="class\user\logout.ashx.cs" />
+    <Compile Include="class\user\profile-data-json.ashx.cs" />
+    <Compile Include="class\user\profile.ashx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

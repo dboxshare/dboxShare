@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="/ui/fastui.css?v=20201109173828">
+<script language="javascript" type="text/javascript" src="/ui/fastdom.js?v=20201109173828"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.js?v=20201109173828"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.lang.js?v=20201109173828"></script>
+<script language="javascript" type="text/javascript" src="/web/admin/department/js/department-modify.js?v=20201109173828"></script>
+<script language="javascript" type="text/javascript" src="/web/user/login-auth-js.ashx?v=20201109173828"></script>
+</head>
+<body>
+<table border="0" cellpadding="8" cellspacing="8" class="form-table">
+  <tr>
+    <td width="140" align="right">*<label lang="html:department.name"></label></td>
+    <td><input name="name" type="text" class="input-text" id="name" maxlength="24" /></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td><input id="modify-button" type="submit" class="input-submit" lang="value:department.button.modify" onClick="departmentModify();" /></td>
+  </tr>
+</table>
+<input name="departmentid" type="hidden" id="departmentid" />
+</body>
+</html>
