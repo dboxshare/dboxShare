@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
-<config>
-  <libreoffice exec="libreoffice.bat" cmd="{source} {target}" extension="pdf" wait="300000">ai,cdr,csv,doc,docm,docx,odg,odp,ods,odt,pps,ppsm,ppsx,ppt,pptm,pptx,pub,psd,rtf,tif,tiff,txt,vdw,vdx,vsd,vsdx,wps,xls,xlsb,xlsm,xlsx</libreoffice>
-  <!--
-  <ffmpegaudio exec="ffmpeg.exe" cmd="-i {source} -c:a aac -b:a 64k -y {target}" extension="flv" wait="300000">aac,flac,m4a,mp3,ogg,wav,wma</ffmpegaudio>
-  <ffmpegvideo exec="ffmpeg.exe" cmd="-i {source} -c:v libx264 -b:v 384k -maxrate 512k -preset superfast -c:a aac -b:a 64k -y {target}" extension="flv" wait="300000">3gp,asf,avi,m4v,mkv,mov,mp4,mpeg,mpg,rm,rmvb,wmv</ffmpegvideo>
-  -->
-</config>
