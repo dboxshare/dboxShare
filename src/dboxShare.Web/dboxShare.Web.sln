@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dboxShare.Web", "dboxShare.Web\dboxShare.Web.csproj", "{DDAB0452-AB04-4075-8E58-E1AF85C09F32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDAB0452-AB04-4075-8E58-E1AF85C09F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAB0452-AB04-4075-8E58-E1AF85C09F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAB0452-AB04-4075-8E58-E1AF85C09F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAB0452-AB04-4075-8E58-E1AF85C09F32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7D8E57F-936E-4BE6-8951-E17619B21745}
+	EndGlobalSection
+EndGlobal

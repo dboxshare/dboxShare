@@ -1,0 +1,7 @@
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Base\dboxShare.Base\bin\Debug\dboxShare.Base.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Base\dboxShare.Base\bin\Debug\dboxShare.Base.pdb
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Base\dboxShare.Base\bin\Debug\MySql.Data.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Base\dboxShare.Base\obj\Debug\dboxShare.Base.csproj.CoreCompileInputs.cache
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Base\dboxShare.Base\obj\Debug\dboxShare.Base.csproj.CopyComplete
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Base\dboxShare.Base\obj\Debug\dboxShare.Base.dll
+D:\inetpub\wwwroot\dboxShare\组件\dboxShare.Base\dboxShare.Base\obj\Debug\dboxShare.Base.pdb
