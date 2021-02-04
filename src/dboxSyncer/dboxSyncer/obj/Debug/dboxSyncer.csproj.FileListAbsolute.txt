@@ -1,0 +1,13 @@
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\bin\Debug\language.xml
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\bin\Debug\dboxSyncer.exe.config
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\bin\Debug\dboxSyncer.exe
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\bin\Debug\dboxSyncer.pdb
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\obj\Debug\dboxSyncer.csprojAssemblyReference.cache
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\obj\Debug\dboxSyncer.FormFolderAdd.resources
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\obj\Debug\dboxSyncer.FormLogin.resources
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\obj\Debug\dboxSyncer.FormMain.resources
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\obj\Debug\dboxSyncer.Properties.Resources.resources
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\obj\Debug\dboxSyncer.csproj.GenerateResource.cache
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\obj\Debug\dboxSyncer.csproj.CoreCompileInputs.cache
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\obj\Debug\dboxSyncer.exe
+D:\inetpub\wwwroot\dboxShare\组件\dboxSyncer\dboxSyncer\obj\Debug\dboxSyncer.pdb

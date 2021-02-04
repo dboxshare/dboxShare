@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="/ui/fastui.css?v=20210128151748">
+<link rel="stylesheet" type="text/css" href="/ui/fastui.list.css?v=20210128151748">
+<link rel="stylesheet" type="text/css" href="/web/drive/file/css/file-list.css?v=20210128151748">
+<script language="javascript" type="text/javascript" src="/ui/fastdom.js?v=20210128151748"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.js?v=20210128151748"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.lang.js?v=20210128151748"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.list.js?v=20210128151748"></script>
+<script language="javascript" type="text/javascript" src="/web/drive/file/js/file-list.js?v=20210128151748"></script>
+<script language="javascript" type="text/javascript" src="/web/drive/file/js/file-utility.js?v=20210128151748"></script>
+<script language="javascript" type="text/javascript" src="/api/app-js/login-auth?v=20210128151748"></script>
+</head>
+<body>
+<div id="datalist-header">
+  <div id="datalist-toolbar">
+    <div id="button-list">
+      <span id="button-filter" class="button-light" onMouseEnter="fastui.list.filterLayerShow(this, 'div');" onMouseLeave="fastui.list.filterLayerHide(this, 'div');">
+      <label lang="html:file.button.filter"></label>
+      <div id="filter">
+        <div class="container">
+          <div id="filter-type" class="group">
+            <div class="name">
+              <label lang="html:file.type"></label>
+            </div>
+          </div>
+          <div id="filter-size" class="group">
+            <div class="name">
+              <label lang="html:file.size"></label>
+            </div>
+          </div>
+          <div id="filter-time" class="group">
+            <div class="name">
+              <label lang="html:file.time"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      </span>
+      <span id="button-folder-add" class="button-light" lang="html:file.button.add" onClick="fastui.windowPopup('folder-add', this.innerHTML, '/web/drive/folder/folder-add.html?folderid=' + $query('folderid') + '', 800, 500);"></span>
+      <span id="button-upload" class="button-dark" lang="html:file.button.upload" onClick="window.parent.uploadWindowShow();"></span>
+      <span id="button-download" class="button-light" lang="html:file.button.download" onClick="dataListDownloadAll();"></span>
+      <span id="button-move" class="button-light" lang="html:file.button.move" onClick="dataListMoveAll();"></span>
+      <span id="button-remove" class="button-light" lang="html:file.button.remove" onClick="dataListAction('remove-all');"></span>
+      <input name="move-to-id" type="hidden" id="move-to-id" />
+    </div>
+    <div id="query">
+      <input type="text" id="keyword" maxlength="50" onKeyPress="if (event.keyCode == 13) {fileQuery(false); return false;}" />
+      <span class="button-query-folder" lang="title:file.tips.query-folder" onClick="fileQuery(true);"></span>
+      <span class="button" onClick="fileQuery(false);"></span>
+    </div>
+  </div>
+  <div id="location" class="datalist-location">
+    <div class="path">
+      <input name="position" type="hidden" id="position" />
+    </div>
+  </div>
+  <table class="datalist" border="0" cellpadding="0" cellspacing="0">
+    <thead>
+      <tr>
+        <th width="20" style="text-align: center;"><input type="checkbox" id="select-all" onClick="fastui.list.selectAll(this);" /><label for="select-all"></label></th>
+        <th width="32">&nbsp;</th>
+        <th id="sortby-name" name="sort-field" onClick="fastui.list.dataSort('ds_name', String);" class="sortby"><label lang="html:file.name"></label></th>
+        <th id="sortby-size" name="sort-field" width="100" onClick="fastui.list.dataSort('ds_size', parseInt);" class="sortby"><label lang="html:file.size"></label></th>
+        <th id="sortby-extension" name="sort-field" width="100" onClick="fastui.list.dataSort('ds_extension', String);" class="sortby"><label lang="html:file.type"></label></th>
+        <th id="sortby-updatetime" name="sort-field" width="250" onClick="fastui.list.dataSort('ds_updatetime', Date);" class="sortby"><label lang="html:file.update-time"></label></th>
+        <th width="50">&nbsp;</th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<div id="datalist-container">
+  <table id="data-list" border="0" cellpadding="0" cellspacing="0" class="datalist-view">
+    <tbody>
+    </tbody>
+  </table>
+  <div id="no-data-tips" lang="html:list.no-data"></div>
+  <input name="copy-data-id" type="hidden" id="copy-data-id" />
+  <input name="move-data-id" type="hidden" id="move-data-id" />
+  <div id="folder-context-menu" class="context-menu">
+    <ul>
+      <li id="folder-context-menu-lock" lang="html:file.context.lock" onClick="folderContextMenuLock(0);"></li>
+      <li id="folder-context-menu-unlock" lang="html:file.context.unlock" onClick="folderContextMenuUnlock(0);"></li>
+      <li id="folder-context-menu-rename" lang="html:file.context.rename" onClick="folderContextMenuRename(0);"></li>
+      <li id="folder-context-menu-remark" lang="html:file.context.remark" onClick="folderContextMenuRemark(0);"></li>
+      <li id="folder-context-menu-purview" lang="html:file.context.purview" onClick="folderContextMenuPurview(0);"></li>
+      <li id="folder-context-menu-move" lang="html:file.context.move" onClick="folderContextMenuMove(0);"></li>
+      <li id="folder-context-menu-remove" lang="html:file.context.remove" onClick="folderContextMenuRemove(0);"></li>
+      <li id="folder-context-menu-task" lang="html:file.context.task" onClick="folderContextMenuTask(0);"></li>
+      <li id="folder-context-menu-discuss" lang="html:file.context.discuss" onClick="folderContextMenuDiscuss(0);"></li>
+      <li id="folder-context-menu-log" lang="html:file.context.log" onClick="folderContextMenuLog(0);"></li>
+      <li id="folder-context-menu-detail" lang="html:file.context.detail" onClick="folderContextMenuDetail(0);"></li>
+    </ul>
+  </div>
+  <div id="file-context-menu" class="context-menu">
+    <ul>
+      <li id="file-context-menu-download" lang="html:file.context.download" onClick="fileContextMenuDownload(0);"></li>
+      <li id="file-context-menu-upversion" lang="html:file.context.upversion" onClick="fileContextMenuUpversion(0);"></li>
+      <li id="file-context-menu-lock" lang="html:file.context.lock" onClick="fileContextMenuLock(0);"></li>
+      <li id="file-context-menu-unlock" lang="html:file.context.unlock" onClick="fileContextMenuUnlock(0);"></li>
+      <li id="file-context-menu-rename" lang="html:file.context.rename" onClick="fileContextMenuRename(0);"></li>
+      <li id="file-context-menu-remark" lang="html:file.context.remark" onClick="fileContextMenuRemark(0);"></li>
+      <li id="file-context-menu-copy" lang="html:file.context.copy" onClick="fileContextMenuCopy(0);"></li>
+      <li id="file-context-menu-move" lang="html:file.context.move" onClick="fileContextMenuMove(0);"></li>
+      <li id="file-context-menu-remove" lang="html:file.context.remove" onClick="fileContextMenuRemove(0);"></li>
+      <li id="file-context-menu-task" lang="html:file.context.task" onClick="fileContextMenuTask(0);"></li>
+      <li id="file-context-menu-discuss" lang="html:file.context.discuss" onClick="fileContextMenuDiscuss(0);"></li>
+      <li id="file-context-menu-version" lang="html:file.context.version" onClick="fileContextMenuVersion(0);"></li>
+      <li id="file-context-menu-log" lang="html:file.context.log" onClick="fileContextMenuLog(0);"></li>
+      <li id="file-context-menu-detail" lang="html:file.context.detail" onClick="fileContextMenuDetail(0);"></li>
+    </ul>
+  </div>
+  <div id="context-menu-collection" class="context-menu">
+    <ul>
+      <li id="context-menu-collection-download" lang="html:file.context.download" onClick="dataListDownloadAll();"></li>
+      <li id="context-menu-collection-move" lang="html:file.context.move" onClick="dataListMoveAll();"></li>
+      <li id="context-menu-collection-remove" lang="html:file.context.remove" onClick="dataListAction('remove-all');"></li>
+    </ul>
+  </div>
+</div>
+
+<div id="datalist-footer">
+  <table class="datalist" border="0" cellpadding="0" cellspacing="0">
+    <tfoot>
+      <tr>
+        <td>&nbsp;</td>
+        <td align="right" width="192"><span id="data-count"></span></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+</body>
+</html>

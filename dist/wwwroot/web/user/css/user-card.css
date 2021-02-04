@@ -1,0 +1,18 @@
+#username {
+    height: 32px;
+    font-size: 1.15em;
+    line-height: 32px;
+    font-weight: bold;
+}
+#title {
+    height: 20px;
+    line-height: 20px;
+}
+#status {
+    height: 20px;
+    line-height: 20px;
+}
+#admin {
+    height: 20px;
+    line-height: 20px;
+}
