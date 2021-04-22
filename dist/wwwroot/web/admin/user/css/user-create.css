@@ -1,0 +1,40 @@
+.topbar-form {
+    margin: 0;
+    padding: 8px;
+}
+.button-add {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background-color: #BDBDBD;
+    background-image: url(/ui/images/datalist-button-plus-icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px auto;
+    cursor: pointer;
+}
+.button-add:hover {
+    background-color: #E0E0E0;
+}
+.button-remove {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background-color: #E0E0E0;
+    background-image: url(/ui/images/datalist-button-minus-icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px auto;
+    cursor: pointer;
+}
+.button-remove:hover {
+    background-color: #EEEEEE;
+}

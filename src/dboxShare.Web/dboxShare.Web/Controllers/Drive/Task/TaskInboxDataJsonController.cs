@@ -1,0 +1,78 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
+using System.Web;
+using System.Web.Http;
+using dboxShare.Base;
+using dboxShare.Web;
+
+
+namespace dboxShare.Web.Drive.Controllers
+{
+
+
+    public class TaskInboxDataJsonController : ApiController
+    {
+
+
+        private dynamic Conn;
+
+
+        protected HttpContext Context
+        {
+            get
+            {
+                return HttpContext.Current;
+            }
+        }
+
+
+        /// <summary>
+        /// 读取任务数据记录返回 JSON 格式字符串
+        /// </summary>
+        [Route("api/drive/task/inbox-data-json")]
+        [HttpGet]
+        public HttpResponseMessage InboxDataJson()
+        {
+            if (AppCommon.LoginAuth("Web") == false)
+            {
+                return AppCommon.ResponseMessage("login authentication failed");
+            }
+
+            int Id = Context.Request.QueryString["Id"].TypeInt();
+
+            try
+            {
+                Conn = Base.Data.DBConnection(AppConfig.ConnectionString);
+
+                Conn.Open();
+
+                Hashtable TaskTable = new Hashtable();
+
+                Base.Data.SqlDataToTable("Select DS_TaskId, DS_UserId From DS_Task_Member Where DS_UserId = " + Context.Session["UserId"].TypeString() + " And DS_TaskId = " + Id, ref Conn, ref TaskTable);
+
+                if (TaskTable["Exists"].TypeBool() == false)
+                {
+                    return AppCommon.ResponseMessage("data does not exist or is invalid");
+                }
+
+                TaskTable.Clear();
+
+                string Json = Base.Data.SqlDataToJson("Select DS_Task.DS_Id, DS_Task.DS_FileId, DS_Task.DS_FileName, DS_Task.DS_FileExtension, DS_Task.DS_IsFolder, DS_Task.DS_UserId, DS_Task.DS_Username, DS_Task.DS_Content, DS_Task.DS_Level, DS_Task.DS_Deadline, DS_Task.DS_Revoke, DS_Task.DS_Cause, DS_Task.DS_Time, DS_Task_Member.DS_Status From DS_Task Inner Join DS_Task_Member On DS_Task_Member.DS_TaskId = DS_Task.DS_Id Where DS_Task_Member.DS_UserId = " + Context.Session["UserId"].TypeString() + " And DS_Task.DS_Id = " + Id, ref Conn);
+
+                return AppCommon.ResponseMessage(Json);
+            }
+            finally
+            {
+                Conn.Close();
+                Conn.Dispose();
+            }
+        }
+
+
+    }
+
+
+}
