@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<type>
+    <word>doc,docm,docx,dot,dotm,dotx</word>
+    <excel>csv,xls,xlsb,xlsm,xlsx,xlt,xltm,xltx</excel>
+    <powerpoint>pot,potm,potx,pps,ppsm,ppsx,ppt,pptm,pptx</powerpoint>
+    <project>mpp,mpt</project>
+    <publisher>pub</publisher>
+    <visio>vdw,vdx,vsd,vsdx,vss,vst,vsx,vtx</visio>
+    <openoffice>odg,odp,ods,odt</openoffice>
+    <wps>wps</wps>
+    <pdf>pdf</pdf>
+    <text>rtf,txt</text>
+    <code>asp,aspx,bat,c,coffee,cpp,cs,css,go,htm,html,java,js,json,jsp,less,lua,m,php,pl,py,rb,sass,scss,sql,swift,ts,vb,vbs,xml</code>
+    <image>bmp,gif,jpeg,jpg,png,tif,tiff</image>
+    <drawing>3ds,ai,blend,cdr,dae,dgn,dwg,dwf,dwfx,dxf,eps,fbx,max,plt,ply,psd,skp,stl,svg</drawing>
+    <audio>aac,flac,m4a,mp3,ogg,wav,wma</audio>
+    <video>3gp,asf,avi,flv,m4v,mkv,mov,mp4,mpeg,mpg,rm,rmvb,wmv</video>
+    <zip>7z,rar,zip</zip>
+</type>

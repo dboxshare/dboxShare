@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dboxShare</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=20210206223528">
+<link rel="stylesheet" type="text/css" href="/ui/fastui.css?v=20210206223528">
+<link rel="stylesheet" type="text/css" href="/web/css/main.css?v=20210206223528">
+<script language="javascript" type="text/javascript" src="/ui/fastdom.js?v=20210206223528"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.js?v=20210206223528"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.lang.js?v=20210206223528"></script>
+<script language="javascript" type="text/javascript" src="/web/js/main.js?v=20210206223528"></script>
+<script language="javascript" type="text/javascript" src="/api/app-js/login-auth?v=20210206223528"></script>
+<script language="javascript" type="text/javascript" src="/api/app-js/app-data?v=20210206223528"></script>
+</head>
+<body>
+<div id="main">
+  <div id="header">
+    <div id="logo">
+      <img src="/ui/images/logo-main.png" height="28" />
+    </div>
+    <div id="tool">
+      <span class="button" lang="title:main.tool.logout" onClick="$location('/api/user/logout');">
+        <img src="/ui/images/tool-logout-icon.png" width="20" />
+      </span>
+      <span class="button" lang="title:main.tool.profile" onClick="fastui.windowPopup('profile', this.title, '/web/user/user-profile.html', 800, 500);">
+        <img src="/ui/images/tool-user-icon.png" width="20" />
+      </span>
+      <span class="button">
+        <img src="/ui/images/tool-list-icon.png" width="20" />
+        <ul>
+          <li lang="html:main.tool.sync" onClick="fastui.windowPopup('sync', this.innerHTML, '/web/tool/sync.html', 800, 500);"></li>
+          <li lang="html:main.tool.help" onClick="fastui.windowPopup('help', this.innerHTML, '/web/tool/help.html', 800, 500);"></li>
+          <li lang="html:main.tool.about" onClick="fastui.windowPopup('about', this.innerHTML, '/web/tool/about.html', 500, 500);"></li>
+        </ul>
+      </span>
+    </div>
+    <div id="tab"></div>
+  </div>
+  <div id="content">
+    <div id="content-cover"></div>
+    <div id="content-loading-cover"></div>
+  </div>
+</div>
+</body>
+</html>

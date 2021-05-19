@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B15702B3-38C7-441B-9F08-8DCAC17CF51F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dboxShare.Web</RootNamespace>
+    <AssemblyName>dboxShare.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44322</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dboxShare.Base">
+      <HintPath>..\..\dboxShare.Base\dboxShare.Base\bin\Debug\dboxShare.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.9\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp, Version=1.0.19.0, Culture=neutral, PublicKeyToken=c8ff6ba0184838bb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SevenZipSharp.Net45.1.0.19\lib\net45\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCommon.cs" />
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="AppException.cs" />
+    <Compile Include="AppGlobal.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Admin\Department\DepartmentActionController.cs" />
+    <Compile Include="Controllers\Admin\Department\DepartmentDataJsonController.cs" />
+    <Compile Include="Controllers\Admin\Department\DepartmentListJsonController.cs" />
+    <Compile Include="Controllers\Admin\Log\LogListJsonController.cs" />
+    <Compile Include="Controllers\Admin\Role\RoleActionController.cs" />
+    <Compile Include="Controllers\Admin\Role\RoleDataJsonController.cs" />
+    <Compile Include="Controllers\Admin\Role\RoleListJsonController.cs" />
+    <Compile Include="Controllers\Admin\Statistic\StatisticDataJsonController.cs" />
+    <Compile Include="Controllers\Admin\System\SystemConfigController.cs" />
+    <Compile Include="Controllers\Admin\System\SystemConfigDataJsonController.cs" />
+    <Compile Include="Controllers\Admin\User\UserActionController.cs" />
+    <Compile Include="Controllers\Admin\User\UserDataJsonController.cs" />
+    <Compile Include="Controllers\Admin\User\UserListJsonController.cs" />
+    <Compile Include="Controllers\Admin\User\UserRecycleListJsonController.cs" />
+    <Compile Include="Controllers\AppJSController.cs" />
+    <Compile Include="Controllers\Drive\Activity\ActivityFlowListJsonController.cs" />
+    <Compile Include="Controllers\Drive\Activity\ActivityLogListJsonController.cs" />
+    <Compile Include="Controllers\Drive\Discuss\DiscussActionController.cs" />
+    <Compile Include="Controllers\Drive\Discuss\DiscussFlowListJsonController.cs" />
+    <Compile Include="Controllers\Drive\Discuss\DiscussListJsonController.cs" />
+    <Compile Include="Controllers\Drive\File\AsyncFileStream.cs" />
+    <Compile Include="Controllers\Drive\File\FileActionController.cs" />
+    <Compile Include="Controllers\Drive\File\FileDataJsonController.cs" />
+    <Compile Include="Controllers\Drive\File\FileDownloadController.cs" />
+    <Compile Include="Controllers\Drive\File\FileDownloadPackageController.cs" />
+    <Compile Include="Controllers\Drive\File\FileListJsonController.cs" />
+    <Compile Include="Controllers\Drive\File\FileRecycleListJsonController.cs" />
+    <Compile Include="Controllers\Drive\File\FileUploadController.cs" />
+    <Compile Include="Controllers\Drive\File\FileUpversionController.cs" />
+    <Compile Include="Controllers\Drive\File\FileVersionListJsonController.cs" />
+    <Compile Include="Controllers\Drive\File\FileViewController.cs" />
+    <Compile Include="Controllers\Drive\File\ListAttributeJsonController.cs" />
+    <Compile Include="Controllers\Drive\File\ZipDataJsonController.cs" />
+    <Compile Include="Controllers\Drive\File\ZipFileDownloadController.cs" />
+    <Compile Include="Controllers\Drive\File\ZipFileUnpackController.cs" />
+    <Compile Include="Controllers\Drive\Folder\FolderActionController.cs" />
+    <Compile Include="Controllers\Drive\Folder\FolderDataJsonController.cs" />
+    <Compile Include="Controllers\Drive\Folder\FolderListJsonController.cs" />
+    <Compile Include="Controllers\Drive\Folder\FolderPathJsonController.cs" />
+    <Compile Include="Controllers\Drive\Folder\FolderTotalJsonController.cs" />
+    <Compile Include="Controllers\Drive\Purview\PurviewActionController.cs" />
+    <Compile Include="Controllers\Drive\Purview\PurviewDataJsonController.cs" />
+    <Compile Include="Controllers\Drive\Purview\PurviewListJsonController.cs" />
+    <Compile Include="Controllers\Drive\Purview\PurviewRoleController.cs" />
+    <Compile Include="Controllers\Drive\Task\TaskActionController.cs" />
+    <Compile Include="Controllers\Drive\Task\TaskInboxDataJsonController.cs" />
+    <Compile Include="Controllers\Drive\Task\TaskInboxListJsonController.cs" />
+    <Compile Include="Controllers\Drive\Task\TaskMemberListJsonController.cs" />
+    <Compile Include="Controllers\Drive\Task\TaskOutboxDataJsonController.cs" />
+    <Compile Include="Controllers\Drive\Task\TaskOutboxListJsonController.cs" />
+    <Compile Include="Controllers\Sync\FileDownloadController.cs" />
+    <Compile Include="Controllers\Sync\FileListXmlController.cs" />
+    <Compile Include="Controllers\Sync\FileUploadController.cs" />
+    <Compile Include="Controllers\Sync\FileUpversionController.cs" />
+    <Compile Include="Controllers\Sync\FolderListXmlController.cs" />
+    <Compile Include="Controllers\Sync\UserLoginController.cs" />
+    <Compile Include="Controllers\User\ForgotPasswordController.cs" />
+    <Compile Include="Controllers\User\UserCardDataJsonController.cs" />
+    <Compile Include="Controllers\User\UserLoginController.cs" />
+    <Compile Include="Controllers\User\UserLogoutController.cs" />
+    <Compile Include="Controllers\User\UserProfileController.cs" />
+    <Compile Include="Controllers\User\UserProfileDataJsonController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56456</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44322/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
