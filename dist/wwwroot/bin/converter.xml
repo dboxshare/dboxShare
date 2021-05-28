@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<config>
-  <libreoffice exec="libreoffice.bat" cmd="{source} {target}" extension="pdf" wait="60000">ai,cdr,csv,doc,docm,docx,odg,odp,ods,odt,pps,ppsm,ppsx,ppt,pptm,pptx,pub,psd,rtf,tif,tiff,txt,vsd,vsdx,wps,xls,xlsb,xlsm,xlsx</libreoffice>
-</config>
