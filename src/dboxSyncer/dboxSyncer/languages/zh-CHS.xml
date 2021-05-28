@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+  <formMain>
+    <listViewLocalPath>本地路径</listViewLocalPath>
+    <listViewNetPath>网络路径</listViewNetPath>
+    <listViewType>类型</listViewType>
+    <groupBoxSync>同步</groupBoxSync>
+    <labelIntervalTime>间隔时间</labelIntervalTime>
+    <labelIntervalMinute>分钟</labelIntervalMinute>
+    <labelUploadSpeed>上传速度</labelUploadSpeed>
+    <labelDownloadSpeed>下载速度</labelDownloadSpeed>
+    <buttonAdd>文件夹添加</buttonAdd>
+    <buttonDelete>删除</buttonDelete>
+    <buttonSetting>设置</buttonSetting>
+    <buttonSync>手动同步</buttonSync>
+    <buttonSyncing>同步中...</buttonSyncing>
+    <buttonWeb>打开网站</buttonWeb>
+    <buttonHide>隐藏窗口</buttonHide>
+    <tipsSelectItem>请选择项目</tipsSelectItem>
+    <tipsUploadSpeedError>上传速度范围错误</tipsUploadSpeedError>
+    <tipsDownloadSpeedError>下载速度范围错误</tipsDownloadSpeedError>
+    <tipsProcessing>同步程序正在执行中...</tipsProcessing>
+    <tipsQuit>确定退出吗？</tipsQuit>
+    <contextMain>打开面板</contextMain>
+    <contextSync>手动同步</contextSync>
+    <contextWeb>打开网站</contextWeb>
+    <contextQuit>退出</contextQuit>
+    <typeDataSync>同步</typeDataSync>
+    <typeDataUpload>仅上传</typeDataUpload>
+    <typeDataDownload>仅下载</typeDataDownload>
+  </formMain>
+  <formLogin>
+    <labelServerUrl>服务器网址</labelServerUrl>
+    <labelLoginId>用户账号 / 邮箱 / 手机</labelLoginId>
+    <labelPassword>登录密码</labelPassword>
+    <checkBoxAutoLogin>自动登录</checkBoxAutoLogin>
+    <buttonLogin>登录</buttonLogin>
+    <buttonLogging>登录中...</buttonLogging>
+    <tipsServerUrl>请输入服务器主机网址</tipsServerUrl>
+    <tipsLoginId>请输入用户账号 / 邮箱 / 手机</tipsLoginId>
+    <tipsPassword>请输入登录密码</tipsPassword>
+    <tipsLockUserId>您已被锁定20分钟内禁止重新登录</tipsLockUserId>
+    <tipsLoginFailed>登录失败</tipsLoginFailed>
+  </formLogin>
+  <formFolderAdd>
+    <labelLocalFolder>本地文件夹</labelLocalFolder>
+    <labelNetFolder>网络文件夹</labelNetFolder>
+    <labelType>类型</labelType>
+    <labelTypeTips>具体操作将会根据网络文件夹权限而定</labelTypeTips>
+    <labelSubfolderTips>同步不包含子文件夹及文件</labelSubfolderTips>
+    <radioTypeSync>同步</radioTypeSync>
+    <radioTypeUpload>仅上传</radioTypeUpload>
+    <radioTypeDownload>仅下载</radioTypeDownload>
+    <buttonBrowse>浏览</buttonBrowse>
+    <buttonAdd>添加</buttonAdd>
+    <tipsLoading>正在加载...</tipsLoading>
+    <tipsNoData>没有数据</tipsNoData>
+    <tipsLoadFailed>加载失败</tipsLoadFailed>
+    <tipsSelectLocalFolder>请选择本地文件夹</tipsSelectLocalFolder>
+    <tipsSelectNetFolder>请选择网络文件夹</tipsSelectNetFolder>
+    <tipsFolderCountLimit>只能添加10个同步文件夹</tipsFolderCountLimit>
+    <tipsFolderExisted>同步文件夹已存在</tipsFolderExisted>
+  </formFolderAdd>
+</language>
