@@ -53,7 +53,7 @@ Main update contents of v4.0
 
 ### Runtime environment 
 
-Runtime: .NET Framework 4.5.2 or later 
+Runtime: .NET Framework 4.7.2 or later 
 
  Database: SQL Server 2008 R2 or later  / MySQL 5.7 or later 
 
