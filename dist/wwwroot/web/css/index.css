@@ -1,0 +1,111 @@
+.container {
+    display: table;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: #2196F3;
+}
+.wrap {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+.login-box {
+    width: 300px;
+    margin: auto;
+    padding: 24px 24px 40px 24px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: 0 0 8px #BDBDBD;
+}
+.login-box .logo {
+    height: 40px;
+    margin: 0 0 8px 0;
+    padding: 16px 0 24px 0;
+    border-bottom: 4px solid #BDBDBD;
+    text-align: center;
+}
+.login-box .item {
+    margin: 0;
+    padding: 8px 0 8px 0;
+    font-size: 1em;
+}
+.login-box #loginid {
+    width: 250px;
+    height: 30px;
+    margin: 0;
+    padding: 4px 8px 4px 40px;
+    border: 1px solid #BDBDBD;
+    font-size: 1.0825em;
+    line-height: 30px;
+    color: #212121;
+    background: #FFFFFF url(/ui/images/login-user-icon.png) no-repeat 8px center;
+    background-size: 20px auto;
+}
+.login-box #loginid:focus {
+    border: 1px solid #BDBDBD;
+    box-shadow: 0 0 0 2px #BDBDBD;
+}
+.login-box #password {
+    width: 250px;
+    height: 30px;
+    margin: 0;
+    padding: 4px 8px 4px 40px;
+    border: 1px solid #BDBDBD;
+    font-size: 1.0825em;
+    line-height: 30px;
+    color: #212121;
+    background: #FFFFFF url(/ui/images/login-password-icon.png) no-repeat 8px center;
+    background-size: 20px auto;
+}
+.login-box #password:focus {
+    border: 1px solid #BDBDBD;
+    box-shadow: 0 0 0 2px #BDBDBD;
+}
+.login-box #login-button {
+    width: 300px;
+    height: 40px;
+    margin: 0;
+    padding: 4px 16px 4px 16px;
+    border: none;
+    font-size: 1.15em;
+    line-height: 32px;
+    color: #FFFFFF;
+    background: #1976D2;
+    cursor: pointer;
+}
+.login-box #login-button:hover {
+    background: #2196F3;
+}
+.language-view {
+    margin: 16px;
+    padding: 0;
+    text-align: center;
+}
+.language-view label {
+    display: inline-block;
+    margin: 16px;
+    padding: 0;
+    font-size: 1em;
+    vertical-align: middle;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 16px;
+    margin: auto;
+    padding: 8px;
+    font-size: .95em;
+    line-height: 16px;
+    text-align: center;
+    color: #BBDEFB;
+}
+.copyright a {
+    color: #FFFFFF;
+}

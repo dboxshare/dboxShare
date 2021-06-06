@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dboxShare</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=20210522165128">
+<link rel="stylesheet" type="text/css" href="/ui/fastui.css?v=20210522165128">
+<link rel="stylesheet" type="text/css" href="/web/css/index.css?v=20210522165128">
+<script language="javascript" type="text/javascript" src="/ui/fastdom.js?v=20210522165128"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.js?v=20210522165128"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.lang.js?v=20210522165128"></script>
+<script language="javascript" type="text/javascript" src="/web/js/index.js?v=20210522165128"></script>
+</head>
+<body>
+<div class="container">
+  <div class="wrap">
+
+    <div class="login-box">
+      <div class="logo">
+        <img src="/ui/images/logo.png" height="40" />
+      </div>
+      <div class="item">
+        <label lang="html:login.login-id"></label>
+      </div>
+      <div class="item">
+        <input name="loginid" type="text" id="loginid" maxlength="16" />
+      </div>
+      <div class="item">
+        <label lang="html:login.password"></label>
+      </div>
+      <div class="item">
+        <input name="password" type="password" id="password" maxlength="16" class="ime-disabled" />
+      </div>
+      <div class="item">
+        <a lang="html:login.forgot-password" href="javascript: fastui.windowPopup('forgot-password', lang.login['forgot-password'], '/web/account/forgot-password.html', 800, 500);"></a>
+      </div>
+      <div class="item">
+        <input id="login-button" lang="value:login.button.login" type="submit" onClick="userLogin();" />
+      </div>
+    </div>
+
+    <div class="language-view"></div>
+
+    <div class="copyright">
+      &copy; 2021 Copyright & Powered by <a href="http://www.dboxshare.com/" target="_blank">dboxShare</a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

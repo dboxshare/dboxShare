@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+  <formMain>
+    <listViewLocalPath>本地路徑</listViewLocalPath>
+    <listViewNetPath>網絡路徑</listViewNetPath>
+    <listViewType>類型</listViewType>
+    <groupBoxSync>同步</groupBoxSync>
+    <labelIntervalTime>間隔時間</labelIntervalTime>
+    <labelIntervalMinute>分鐘</labelIntervalMinute>
+    <labelUploadSpeed>上傳速度</labelUploadSpeed>
+    <labelDownloadSpeed>下載速度</labelDownloadSpeed>
+    <buttonAdd>文件夾添加</buttonAdd>
+    <buttonDelete>刪除</buttonDelete>
+    <buttonSetting>設置</buttonSetting>
+    <buttonSync>手動同步</buttonSync>
+    <buttonSyncing>同步中...</buttonSyncing>
+    <buttonWeb>打開網站</buttonWeb>
+    <buttonHide>隱藏窗口</buttonHide>
+    <tipsSelectItem>請選擇項目</tipsSelectItem>
+    <tipsUploadSpeedError>上傳速度范圍錯誤</tipsUploadSpeedError>
+    <tipsDownloadSpeedError>下載速度范圍錯誤</tipsDownloadSpeedError>
+    <tipsProcessing>同步程序正在執行中...</tipsProcessing>
+    <tipsQuit>確定退出嗎？</tipsQuit>
+    <contextMain>打開面板</contextMain>
+    <contextSync>手動同步</contextSync>
+    <contextWeb>打開網站</contextWeb>
+    <contextQuit>退出</contextQuit>
+    <typeDataSync>同步</typeDataSync>
+    <typeDataUpload>僅上傳</typeDataUpload>
+    <typeDataDownload>僅下載</typeDataDownload>
+  </formMain>
+  <formLogin>
+    <labelServerUrl>服務器網址</labelServerUrl>
+    <labelLoginId>用戶賬號 / 郵箱 / 手機</labelLoginId>
+    <labelPassword>登錄密碼</labelPassword>
+    <checkBoxAutoLogin>自動登錄</checkBoxAutoLogin>
+    <buttonLogin>登錄</buttonLogin>
+    <buttonLogging>登錄中...</buttonLogging>
+    <tipsServerUrl>請輸入服務器主機網址</tipsServerUrl>
+    <tipsLoginId>請輸入用戶賬號 / 郵箱 / 手機</tipsLoginId>
+    <tipsPassword>請輸入登錄密碼</tipsPassword>
+    <tipsLockUserId>您已被鎖定20分鐘內禁止重新登錄</tipsLockUserId>
+    <tipsLoginFailed>登錄失敗</tipsLoginFailed>
+  </formLogin>
+  <formFolderAdd>
+    <labelLocalFolder>本地文件夾</labelLocalFolder>
+    <labelNetFolder>網絡文件夾</labelNetFolder>
+    <labelType>類型</labelType>
+    <labelTypeTips>具體操作將會根據網絡文件夾權限而定</labelTypeTips>
+    <labelSubfolderTips>同步不包含子文件夾及文件</labelSubfolderTips>
+    <radioTypeSync>同步</radioTypeSync>
+    <radioTypeUpload>僅上傳</radioTypeUpload>
+    <radioTypeDownload>僅下載</radioTypeDownload>
+    <buttonBrowse>瀏覽</buttonBrowse>
+    <buttonAdd>添加</buttonAdd>
+    <tipsLoading>正在加載...</tipsLoading>
+    <tipsNoData>沒有數據</tipsNoData>
+    <tipsLoadFailed>加載失敗</tipsLoadFailed>
+    <tipsSelectLocalFolder>請選擇本地文件夾</tipsSelectLocalFolder>
+    <tipsSelectNetFolder>請選擇網絡文件夾</tipsSelectNetFolder>
+    <tipsFolderCountLimit>只能添加10個同步文件夾</tipsFolderCountLimit>
+    <tipsFolderExisted>同步文件夾已存在</tipsFolderExisted>
+  </formFolderAdd>
+</language>

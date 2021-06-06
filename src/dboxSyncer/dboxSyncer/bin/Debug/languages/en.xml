@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+  <formMain>
+    <listViewLocalPath>Local path</listViewLocalPath>
+    <listViewNetPath>Net path</listViewNetPath>
+    <listViewType>Type</listViewType>
+    <groupBoxSync>Sync</groupBoxSync>
+    <labelIntervalTime>Interval time</labelIntervalTime>
+    <labelIntervalMinute>Minutes</labelIntervalMinute>
+    <labelUploadSpeed>Upload speed</labelUploadSpeed>
+    <labelDownloadSpeed>Download speed</labelDownloadSpeed>
+    <buttonAdd>Folder add</buttonAdd>
+    <buttonDelete>Delete</buttonDelete>
+    <buttonSetting>Setting</buttonSetting>
+    <buttonSync>Start sync</buttonSync>
+    <buttonSyncing>Syncing...</buttonSyncing>
+    <buttonWeb>Open web</buttonWeb>
+    <buttonHide>Hide</buttonHide>
+    <tipsSelectItem>Please select item</tipsSelectItem>
+    <tipsUploadSpeedError>Upload speed range error</tipsUploadSpeedError>
+    <tipsDownloadSpeedError>Download speed range error</tipsDownloadSpeedError>
+    <tipsProcessing>Sync is in progressing...</tipsProcessing>
+    <tipsQuit>Are you sure to exit?</tipsQuit>
+    <contextMain>Open main</contextMain>
+    <contextSync>Start sync</contextSync>
+    <contextWeb>Open web</contextWeb>
+    <contextQuit>Quit</contextQuit>
+    <typeDataSync>Sync</typeDataSync>
+    <typeDataUpload>Upload only</typeDataUpload>
+    <typeDataDownload>Download only</typeDataDownload>
+  </formMain>
+  <formLogin>
+    <labelServerUrl>Server URL</labelServerUrl>
+    <labelLoginId>Username / Email / Phone</labelLoginId>
+    <labelPassword>Password</labelPassword>
+    <checkBoxAutoLogin>Auto login</checkBoxAutoLogin>
+    <buttonLogin>Login</buttonLogin>
+    <buttonLogging>Logging in...</buttonLogging>
+    <tipsServerUrl>Please enter the server host URL</tipsServerUrl>
+    <tipsLoginId>Please enter username / email / phone</tipsLoginId>
+    <tipsPassword>Please enter your password</tipsPassword>
+    <tipsLockUserId>Relogin is not allowed within 20 minutes</tipsLockUserId>
+    <tipsLoginFailed>Login failed</tipsLoginFailed>
+  </formLogin>
+  <formFolderAdd>
+    <labelLocalFolder>Local folder</labelLocalFolder>
+    <labelNetFolder>Net folder</labelNetFolder>
+    <labelType>Type</labelType>
+    <labelTypeTips>Operation depends on permissions</labelTypeTips>
+    <labelSubfolderTips>Sync does not contain subfolders and files</labelSubfolderTips>
+    <radioTypeSync>Sync</radioTypeSync>
+    <radioTypeUpload>Upload only</radioTypeUpload>
+    <radioTypeDownload>Download only</radioTypeDownload>
+    <buttonBrowse>Browse</buttonBrowse>
+    <buttonAdd>Add</buttonAdd>
+    <tipsLoading>Loading...</tipsLoading>
+    <tipsNoData>No data</tipsNoData>
+    <tipsLoadFailed>Load failed</tipsLoadFailed>
+    <tipsSelectLocalFolder>Please select local folder</tipsSelectLocalFolder>
+    <tipsSelectNetFolder>Please select net folder</tipsSelectNetFolder>
+    <tipsFolderCountLimit>Limit 10 sync folders</tipsFolderCountLimit>
+    <tipsFolderExisted>Sync folder is existed</tipsFolderExisted>
+  </formFolderAdd>
+</language>

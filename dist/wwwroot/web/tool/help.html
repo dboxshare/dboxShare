@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="/ui/fastui.css?v=20210522165128">
+<script language="javascript" type="text/javascript" src="/ui/fastdom.js?v=20210522165128"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.js?v=20210522165128"></script>
+<script language="javascript" type="text/javascript" src="/ui/fastui.lang.js?v=20210522165128"></script>
+<script language="javascript" type="text/javascript" src="/api/script/login-auth?v=20210522165128"></script>
+</head>
+<body>
+<div id="content-page">
+
+  <div class="bar">Main menu</div>
+  <div class="list">
+    <ul>
+      <li>File: folder, file management and sharing cooperation area;</li>
+      <li>Activity: view the latest activities of related folders and files;</li>
+      <li>System management: only limited to the background function of system administrator;</li>
+    </ul>
+  </div>
+
+  <div class="bar">Right click menu of folder and file</div>
+  <div class="tips">Tips: right click in the folder and file list area to pop up the function menu, and the function items will be displayed according to the corresponding permissions;</div>
+  <div class="list">
+    <ul>
+      <li>Download: download the file to the local device;</li>
+      <li>Collect: add the file to collection;</li>
+      <li>Uncollect: remove the file from the collection;</li>
+      <li>Follow: add the file to follow;</li>
+      <li>Unfollow: remove the file from the follow;</li>
+      <li>Link share: share folders and files with others through links;</li>
+      <li>Rename: edit the name of the folder or file;</li>
+      <li>Remark: edit the remark of the folder and file;</li>
+      <li>Share purview: manage or view the sharing permission of the folder;</li>
+      <li>Copy to: copy the file to the specified directory;</li>
+      <li>Move to: move the folder and file to the specified directory;</li>
+      <li>Remove: remove the folder and file to recycle bin;</li>
+      <li>Restore: restore the folder and file to the source location;</li>
+      <li>Delete: the folder and file cannot be restored after being completely deleted;</li>
+      <li>Lock: after locking the folder and file, you will not be able to modify, move, remove and other management operations;</li>
+      <li>Unlock: after unlocking the folder and file, all management functions will be restored;</li>
+      <li>Upload new version: upload the new version of the file;</li>
+      <li>Replace version: replace the version of the document as the original;</li>
+      <li>Version: manage and view the historical version of the file;</li>
+      <li>Log: view the operation log of the folder and file;</li>
+      <li>Details: view the details of the folder and file;</li>
+    </ul>
+  </div>
+
+  <div class="bar">Folder, file permission range</div>
+  <div class="tips">Tips: the owner has all the permissions of the creator;</div>
+  <div class="section">
+    <table width="100%" border="0" cellspacing="1" cellpadding="8" bgcolor="#BDBDBD">
+      <tr>
+        <td align="center" colspan="7" bgcolor="#BDBDBD">Folder permissions</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">&nbsp;</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Viewer</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Downloader</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Uploader</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Editor</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Manager</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Creator</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">New folder</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">Folder rename</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">Folder remark</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">Folder move</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">Folder remove</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">Folder restore</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">Folder delete</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">Folder lock / unlock</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">Folder share purview</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">Folder link share</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">Folder log view</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="1" cellpadding="8" bgcolor="#BDBDBD">
+      <tr>
+        <td align="center" colspan="7" bgcolor="#BDBDBD">File permissions</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">&nbsp;</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Viewer</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Downloader</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Uploader</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Editor</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Manager</td>
+        <td width="75" align="center" bgcolor="#EEEEEE">Creator</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File upload</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File download</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File preview</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File collect / uncollect</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File follow / unfollow</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File link share</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File rename</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File remark</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File copy</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File move</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File remove</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File restore</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File delete</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File lock / unlock</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File new version upload</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File version view</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File version replacement</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">File log view</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+        <td align="center" bgcolor="#FFFFFF">✔</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bar">Common problem</div>
+  <div class="list">
+    <ul>
+      <li>
+        Q: what do small icons on folder and file icons mean?<br />
+        A: the human icon in the lower left corner indicates sharing, and the lock icon in the lower right corner indicates locking.
+      </li>
+      <li>
+        Q: why does folder and file management prompt tick the symbol, but the actual situation has not changed?<br />
+        A: because some items do not have sufficient operation permissions, the tick only indicates that the operation has been completed, and the actual operation will be performed according to the corresponding permissions.
+      </li>
+      <li>
+        Q: why do folder and file management prompt cross symbols?<br />
+        A: because the data has been changed, the lack of operation authority and prohibition of operation and other reasons, will cause a cross sign prompt.
+      </li>
+      <li>
+        Q: how to upload folders?<br />
+        A: click the upload button, drag and drop the folder to the upload window, and it will be added to the upload list.
+      </li>
+      <li>
+        Q: why can't the newly uploaded files be searched (full text search only)<br />
+        A: full text retrieval data is not updated in real time. It will automatically update the index according to the preset cycle.
+      </li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>
