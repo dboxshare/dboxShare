@@ -1,8 +1,0 @@
-#datalist-toolbar #button-list #button-restore {
-    padding-left: 32px;
-    background-image: url(/ui/images/datalist-button-restore-icon.png);
-}
-#datalist-toolbar #button-list #button-delete {
-    padding-left: 32px;
-    background-image: url(/ui/images/datalist-button-delete-icon.png);
-}
