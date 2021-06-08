@@ -51,6 +51,17 @@ Main update contents of v4.0
 * Anti-virus scanning engine integration (for real-time monitoring of file security)
 
 
+![](http://www.dboxshare.com/images/en/1.png)
+
+![](http://www.dboxshare.com/images/en/2.png)
+
+![](http://www.dboxshare.com/images/en/3.png)
+
+![](http://www.dboxshare.com/images/en/4.png)
+
+![](http://www.dboxshare.com/images/en/5.png)
+
+
 ### Runtime environment 
 
 Runtime: .NET Framework 4.7.2 or later 
